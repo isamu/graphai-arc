@@ -1,0 +1,6 @@
+{
+  "id":{"0":"Mercury_7175875"},
+  "question":{"0":"An astronomer observes that a planet rotates faster after a meteorite impact. Which is the most likely effect of this increase in rotation?"},
+  "choices":{"0":{"text":["Planetary density will decrease.","Planetary years will become longer.","Planetary days will become shorter.","Planetary gravity will become stronger."],"label":["A","B","C","D"]}},
+  "answerKey":{"0":"C"}
+}
