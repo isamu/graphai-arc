@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write '{src/**/*,*}.{js,ts,vue,json}'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx ts-node ai2_arc/do.ts",
+    "format": "prettier --write ai2_arc/**/*.ts *.json .eslintrc.js"
   },
   "author": "",
   "license": "ISC",
