@@ -6,7 +6,6 @@ import * as vanilla_agents from "@graphai/vanilla";
 import * as llm_agents from "@graphai/llm_agents";
 
 import * as fs from "fs";
-import { parse } from "csv-parse/sync";
 
 const csvAgent = () => {
   // const data = fs.readFileSync(__dirname + '/test-00000-of-00001.json');
@@ -61,8 +60,8 @@ const graph_data = {
 
 export const main = async () => {
   const graph = new GraphAI(graph_data, { ...vanilla_agents, ...llm_agents });
-  graph.onLogCallback = (log: TransactionLog) => {
-    // console.log(log);
+  graph.onLogCallback = (__log: TransactionLog) => {
+    // console.log(__log);
   };
   const result = await graph.run();
   console.log(JSON.stringify(result));
