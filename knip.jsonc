@@ -1,0 +1,27 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  // ai2_arc/do.ts is the single source file and the entry point: it self-invokes main() and is
+  // the target of the "test" script (npx ts-node ai2_arc/do.ts). It is listed explicitly as the
+  // entry so the analyzed root does not depend on knip's script-parsing heuristics; knip also
+  // auto-detects it from the test script, so it emits a harmless "redundant entry" config hint.
+  // (package.json "main": index.js is a non-existent stub, unrelated to this scan.)
+  "entry": ["ai2_arc/do.ts"],
+  "project": ["ai2_arc/**/*.ts"],
+  "ignoreExportsUsedInFile": true,
+  "includeEntryExports": false,
+  "rules": {
+    // Warn mode: every rule is "warn" (reported, exit 0) or "off". Nothing gates CI here.
+    "files": "warn",
+    "dependencies": "warn",
+    "devDependencies": "warn",
+    "unlisted": "warn",
+    "exports": "warn",
+    "types": "warn",
+    "unresolved": "off",
+    "binaries": "off",
+    "nsExports": "off",
+    "nsTypes": "off",
+    "enumMembers": "off",
+    "duplicates": "off",
+  },
+}

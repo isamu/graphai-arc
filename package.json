@@ -6,7 +6,8 @@
     "test": "npx ts-node ai2_arc/do.ts",
     "format": "prettier --write ai2_arc/**/*.ts *.json eslint.config.mjs",
     "lint": "eslint ai2_arc",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "knip": "knip"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +23,7 @@
     "dotenv": "^17.4.2",
     "eslint": "^10.8.0",
     "globals": "^17.8.0",
+    "knip": "^6",
     "prettier": "^3.9.6",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
