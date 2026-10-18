@@ -47,8 +47,9 @@ const graph_data = {
             inputs: { prompt: ":row.prompt" },
           },
           bypass: {
-            agent: "bypassAgent",
-            inputs: [":agent.choices.$0.message.content"],
+            agent: "copyAgent",
+            inputs: { content: ":agent.choices.$0.message.content" },
+            params: { namedKey: "content" },
             isResult: true,
           },
         },

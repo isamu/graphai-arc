@@ -13,20 +13,20 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@graphai/llm_agents": "^0.0.6",
-    "@graphai/vanilla": "^0.0.7",
-    "graphai": "^0.5.2"
+    "@graphai/llm_agents": "^2.1.0",
+    "@graphai/vanilla": "^2.0.12",
+    "graphai": "^2.0.18"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/node": "^26.1.2",
-    "dotenv": "^17.4.2",
-    "eslint": "^10.8.0",
-    "globals": "^17.8.0",
-    "knip": "^6",
-    "prettier": "^3.9.6",
+    "@types/node": "^26.6.5",
+    "dotenv": "^18.0.8",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "knip": "^6.41.0",
+    "prettier": "^3.9.10",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.65.0"
+    "typescript-eslint": "^8.71.2"
   }
 }
